@@ -1,0 +1,19 @@
+<p>product works!</p>
+
+<product-price
+    *ngIf="isProductVisible"
+    [price]=currentPrice />
+
+<button (click)="isProductVisible = !isProductVisible">
+    Toggle
+</button>
+&nbsp;&nbsp;&nbsp;
+<button (click)="incrementPrice()">
+    Price +1
+</button>
+
+<br/><br/>
+<small>Open DevTools Console (<b>F12</b>) to check all Component Lifecycle</small>
+<br/>
+<small><a href="https://angular.io/guide/lifecycle-hooks" target="_blank">More info</a> about Component Lifecycle</small>
+
